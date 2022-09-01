@@ -13,63 +13,69 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header">
+      <UniqueIdentifier>{56bf18eb-e607-4c64-9806-6c34e0c331a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{456a5725-0d30-4ad8-8c53-6491f86450ad}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Pong_IgnacioArrastua.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Ball.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="GameLoop.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Button.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Ball.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Game.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Pad.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\GameLoop.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Game.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\HowTo.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Menu.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="Button.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Pad.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="PowerUp.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\Pong_IgnacioArrastua.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
-    <ClCompile Include="HowTo.cpp">
-      <Filter>Archivos de origen</Filter>
+    <ClCompile Include="..\src\cpp\PowerUp.cpp">
+      <Filter>Source</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Pad.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\header\Ball.h">
+      <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="GameLoop.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\header\Button.h">
+      <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="Ball.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\header\Game.h">
+      <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="Menu.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\header\GameLoop.h">
+      <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="Game.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\header\GameStates.h">
+      <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="GameStates.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\header\HowTo.h">
+      <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="Button.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\header\Menu.h">
+      <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="PowerUp.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\header\Pad.h">
+      <Filter>Header</Filter>
     </ClInclude>
-    <ClInclude Include="HowTo.h">
-      <Filter>Archivos de encabezado</Filter>
+    <ClInclude Include="..\src\header\PowerUp.h">
+      <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
