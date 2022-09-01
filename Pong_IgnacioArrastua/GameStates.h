@@ -5,6 +5,5 @@ enum class GameStates
 	VsCpu,
 	VsPlayer,
 	Rules,
-	Options,
 	Exit
 };

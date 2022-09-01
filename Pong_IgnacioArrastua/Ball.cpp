@@ -1,6 +1,6 @@
 #include "Ball.h"
 
-Ball InitBall(Vector2 screen)
+Ball initBall(Vector2 screen)
 {
 	Ball ball =
 	{
@@ -8,7 +8,7 @@ Ball InitBall(Vector2 screen)
 	};
 	return ball;
 }
-void MovePositionBall()
+void movePositionBall()
 {
 	if (ball.speed.x > maxSpeed)
 	{				   
@@ -22,10 +22,11 @@ void MovePositionBall()
 	ball.position.y += ball.speed.y * GetFrameTime();
 
 }
-void ResetPositionBall()
+void resetBall()
 {
 	ball.position.x = GetScreenWidth() /2;
 	ball.position.y = GetScreenHeight()/2;
+	ball.color = RAYWHITE;
 	if (GetRandomValue(0,1)==1)
 	{
 		ball.speed.y = minSpeed;
@@ -43,7 +44,7 @@ void ResetPositionBall()
 		ball.speed.x = -minSpeed;
 	}
 }
-void DrawBall()
+void drawBall()
 {
 	DrawCircleV(ball.position, ball.radius, ball.color);
 }

@@ -2,7 +2,7 @@
 #include "raylib.h"
 #include "string"
 
-void DrawButton(Button button)
+void drawButton(Button button)
 {
 	DrawRectangleRec(button.rec, button.color);
 	DrawText(button.buttonTittle.c_str(), button.rec.x, button.rec.y +button.rec.height/3, 3 * GetScreenWidth() / 190, BLACK);
@@ -16,7 +16,7 @@ void DrawButton(Button button)
 Button createButton(std::string buttonTitle, Color color)
 {
 	Button button;
-	float width = GetScreenWidth() / 10;
+	float width = GetScreenWidth() / 9;
 	float height = GetScreenHeight() / 20;
 	button.rec = { (float)GetScreenWidth()/2-width/2, (float)GetScreenHeight() / 3, width, height };
 	button.buttonTittle = buttonTitle;
@@ -28,7 +28,7 @@ Button createButton(std::string buttonTitle, Color color)
 Button createButton(float x, float y,std::string buttonTitle, Color color)
 {
 	Button button;
-	float width = GetScreenWidth() / 10;
+	float width = GetScreenWidth() / 9;
 	float height = GetScreenHeight() / 20;
 	button.rec = { x,y, width, height };
 	button.buttonTittle = buttonTitle;

@@ -3,6 +3,6 @@
 #include "GameStates.h"
 
 
-void GameStatesDrawing(GameStates& gameStates);
-	void GameStatesController(GameStates& gameStates, Player players[], bool& isGameRunning);
-	void Game();
+void gameStatesDrawing(GameStates& gameStates);
+	void gameStatesController(GameStates& gameStates, Player players[], bool& isGameRunning);
+	void game();

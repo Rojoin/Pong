@@ -1,11 +1,12 @@
 ﻿
 #include "Game.h"
-
+#include "HowTo.h"
 #include "Menu.h"
 
 GameStates gameState = GameStates::MainMenu;
 extern Player players[2];
-void GameStatesController(GameStates& gameStates,bool& isGameRunning)
+bool isProgramRunning = true;
+void gameStatesController(GameStates& gameStates,bool& isGameRunning)
 {
 	
 
@@ -14,17 +15,20 @@ void GameStatesController(GameStates& gameStates,bool& isGameRunning)
 	case GameStates::MainMenu:
 		MenuState(gameStates);
 		break;
-	case GameStates::VsCpu: break;
+	case GameStates::VsCpu:
 	case GameStates::VsPlayer:
 		GameLogic();
 		break;
-	case GameStates::Rules: break;
-	case GameStates::Options: break;
-	case GameStates::Exit: break;
+	case GameStates::Rules:
+		RulesStates(gameStates);
+		break;
+	case GameStates::Exit:
+		CloseWindow();
+		break;
 	default: ;
 	}
 }
-void GameStatesDrawing(GameStates& gameStates)
+void gameStatesDrawing(GameStates& gameStates)
 {
 	switch (gameStates)
 	{
@@ -32,36 +36,35 @@ void GameStatesDrawing(GameStates& gameStates)
 		MenuDraw();
 		break;
 	case GameStates::VsCpu:
-		break;
 	case GameStates::VsPlayer:
 		{
 		DrawGame();
 		}
 		break;
-
 	case GameStates::Rules:
-		break;
-	case GameStates::Options:
+		RulesDraw();
 		break;
 	case GameStates::Exit:
+		isProgramRunning = false;
+
 		break;
 	}
 }
 
-void Game()
+void game()
 {
 	InitWindow(screenWidth, screenHeight, "Pong");
 	InitAudioDevice();
 	SetTargetFPS(GetMonitorRefreshRate(0));
-	
+	isProgramRunning = true;
 	
 	bool isGameRunning;
-	while (!WindowShouldClose())    // Detect window close button or ESC key
+	while (!WindowShouldClose()&& isProgramRunning)    // Detect window close button or ESC key
 	{
-		GameStatesController(gameState,isGameRunning);
+		gameStatesController(gameState,isGameRunning);
 		BeginDrawing();
 		
-		GameStatesDrawing(gameState);
+		gameStatesDrawing(gameState);
 		EndDrawing();
 	}
 	CloseAudioDevice();

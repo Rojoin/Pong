@@ -11,8 +11,7 @@ struct Button
 	std::string buttonTittle;
 
 };
-extern Button playVsButton;
-void DrawButton(Button button);
+void drawButton(Button button);
 Button createButton(float x, float y, float width, float height, std::string buttonTitle, Color color);
 Button createButton(float x, float y, std::string buttonTitle, Color color);
 Button createButton(std::string buttonTitle, Color color); 

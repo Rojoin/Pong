@@ -13,8 +13,8 @@ struct Ball
  extern Ball ball;
 
 
-Ball InitBall(Vector2 screen);
-void MovePositionBall();
-void ResetPositionBall();
-void DrawBall();
+Ball initBall(Vector2 screen);
+void movePositionBall();
+void resetBall();
+void drawBall();
 

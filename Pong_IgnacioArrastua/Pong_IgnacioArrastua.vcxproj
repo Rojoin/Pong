@@ -158,9 +158,11 @@
     <ClCompile Include="Button.cpp" />
     <ClCompile Include="GameLoop.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="HowTo.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="Pad.cpp" />
     <ClCompile Include="Pong_IgnacioArrastua.cpp" />
+    <ClCompile Include="PowerUp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Ball.h" />
@@ -168,8 +170,10 @@
     <ClInclude Include="Game.h" />
     <ClInclude Include="GameLoop.h" />
     <ClInclude Include="GameStates.h" />
+    <ClInclude Include="HowTo.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="Pad.h" />
+    <ClInclude Include="PowerUp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
